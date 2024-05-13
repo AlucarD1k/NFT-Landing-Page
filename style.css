@@ -1,0 +1,218 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устраняем отступы между ячейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	color: #606060;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+    font-family: 'Open Sans', sans-serif;
+}
+a, a:visited { /* порядок правил для ссылок имеет значение */
+	color: #339933;
+	text-decoration: underline;
+}
+a:hover {
+	color: #339933;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #339933;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* --------------- /базовые настройки ---------*/
+/* <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+
+
+body{
+    background: #450774;
+}
+    .upper-header{
+        display: flex;
+        /* margin-top: 30px; */
+        margin-left: 197px;
+        margin-right: 197px;
+        justify-content: space-between;
+        font-family: "Inter", sans-serif;
+    }
+        .logo{
+            margin-top: 44px;
+        }
+        .menu{
+            display: flex;
+            width: 535px;
+            height: 24px;
+            margin-top: 52px;
+            /* padding-top: 10px; */
+            justify-content: space-between;
+            
+        }
+            .menu li a{
+                text-decoration: none;
+                color: #BCBDBC;
+            }
+            .menu li a:hover{
+                color: #9519e2;
+            }
+        .log-sign{
+            display: flex;
+            justify-content: space-around;
+            width: 207px;
+            height: 56px;
+            align-items: center;
+
+        }
+        .log-sign li a{
+            text-decoration: none;
+            /* color: #BDBDBD; */
+        }
+            .login{
+                color: #BDBDBD!important;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 150%;
+            }
+            .signup{
+                color: #ffff!important;
+                border: #250539 solid 1px!important;
+                background-color: #250539!important;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 150%;
+                padding: 16px 24px 16px 24px;
+                border-radius: 10px;
+            }
+    article{
+        width: 833px;
+        margin-left: 197px;
+        margin-top: 172px;
+        display: flex;
+        flex-wrap: wrap;
+    } 
+        article h2{
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 700;
+            font-size: 80px;
+            line-height: 120%;
+            text-transform: capitalize;
+            color: #fff
+        }
+            article h2 .vint{
+                margin-bottom: -30px;
+            }
+            article h2 .play{
+                margin-left: -50px;
+                margin-bottom: 50px;
+            }
+            article p{
+                font-family: "Inter", sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
+                letter-spacing: 0.02em;
+                color: #fff;
+            }
+            article .explore-btn{
+                text-decoration: none;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 150%;
+                color: #fff;
+                border-radius: 5px;
+                /* padding: 16px 24px; */
+                width: 200px;
+                height: 56px;
+                background: #9a1ae9;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
+            article .create-btn{
+                display: flex;
+                width: 200px;
+                height: 56px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 150%;
+                color: #f7a761;
+                text-decoration: none;
+                align-items: center;
+                justify-content: center;
+            }
+            article .cube{
+                padding-left: 346px;
+            }
