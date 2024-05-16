@@ -141,7 +141,7 @@ body{
         justify-content: space-between;
         font-family: "Inter", sans-serif;
     }
-        .logo{
+        .upper-header .logo{
             margin-top: 44px;
         }
         .menu{
@@ -413,6 +413,7 @@ body{
         /* height: 738px; */
         margin-top: 124px;
         margin-bottom: 130px;
+        /* width: ; */
     }
         
         .page3 h{
@@ -599,9 +600,20 @@ body{
     }
 
     .page5{
+        position: relative;
+        margin-left: 200px;
+        margin-bottom: 140px;
         width: 1520px;
         display: flex;
         justify-content: space-between;
+    }
+    .page5 .ellipse5{
+        position: absolute;
+        z-index: -1;
+        /* width: 1200px; 939 573
+        height: 732px; */
+        margin-top: -200px;
+        margin-left: 200px;
     }
     .page5 .discription{
         display: flex;
@@ -646,17 +658,187 @@ body{
         display: flex;
         flex-direction: column;
         width: 158px;
-        
-        margin-bottom: 49px;
+        margin-top: 104px;
+        /* justify-content: space-evenly; */
     }
-    .images .with2images:first-child{
+    .images .with2images .first-img{
         margin-bottom: 49px;
     }
     
     .images .with3images{
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        margin: 0 49px;
     }
+    .oralgold-box{
+        position: relative;
+        overflow:hidden;
+        width:158px;
+        height:158px;
+        border-radius: 20px;
+    }
+    .oralgold-box .oralgold{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        width:158px;
+        height:158px;
+        object-fit:cover;
+    }
+    .page6{
+        display: flex;
+        width: 1408px;
+        height: 305px;
+        padding: 56px;
+        margin-left: 200px;
+        background-color: #2d054a; 
+        border-radius: 20px;
+        margin-bottom: 139px;
+        
+        align-items: center;
+    }
+    .page6 .chat{
+        align-self: flex-start;
+    }
+    .page6 .in-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 74px;
+    }
+    .page6 .in-box h1{
+        font-family: var(--third-family);
+        font-weight: 700;
+        font-size: 52px;
+        line-height: 150%;
+        text-transform: capitalize;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    .page6 .in-box p{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 130%;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 50px;
+    }
+    .page6 .in-box button{
+        width: 220px;
+        height: 56px;
+        background-color: #9a1ae9;
+        border: none;
+        border-radius: 30px;
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        color: #fff
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        width: 1920px;
+        height: 625px;
+    }
+    footer .first-part{
+        display: flex;
+        /* width: 1520px; */
+        height: 680px;
+        padding-top: 105px;
+        background-color: #37065B;
+        
+    }
+    footer .first-part .about{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: baseline;
+        width: 370px;
+        margin-left: 300px;
+        margin-right: 57px;
+    }
+    footer .first-part .about .logo{
+        margin-bottom: 20px;
+    }
+    footer .first-part .about h{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 187%;
+        color: #fff;
+        margin-bottom: 50px;
+    }
+    footer .first-part .about .contact{
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    footer .first-part .about .contact .icon-of-contact{
+        margin-right: 20px;
+    }
+    footer .first-part .about .contact .click p{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: #969696;
+    }
+    footer .first-part .footer-more{
+        display: flex;
+        flex-direction: column;
+        height: 383px;
+        flex-wrap: wrap;
+        padding-top: 3px;
+    }
+    footer .first-part .footer-more .links{
+        margin-right: 145px;
+    }
+    footer .first-part .footer-more .links h{
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 136%;
+        color: #fff; 
+        display: block;
+        margin-bottom: 15px;
+    }
+    footer .first-part .footer-more .links nav li a{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 220%;
+        color: #fff;
+        text-decoration: none;
+    }
+    footer .second-part{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 300;
+        background-color: #161617;
+    }
+    footer .second-part p{
+        font-family: var(--font3);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 167%;
+        color: #777e90;
+    }
+    footer .second-part .img-links{
+        display: flex;
+        justify-content: space-between;
+        width: 194px;
+    }
+
+
+
+
 
 
 
