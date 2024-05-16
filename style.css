@@ -107,8 +107,13 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    width: 1920px;
+    align-items: center;
     
 }
+    .page1{
+        width: 1920px;
+    }
     .main-picture{
         display: flex;
         align-items: center;
@@ -156,6 +161,7 @@ body{
             .menu li a{
                 text-decoration: none;
                 color: #BCBDBC;
+                transition: all;
             }
             .menu li a:hover{
                 color: #9519e2;
@@ -252,16 +258,24 @@ body{
             }
     .first-footer{
         display: flex;
+        flex-direction: column;
         margin-top: 147px;
         margin-left: 91px;
         width: 1739px;
         height: 203px;
         justify-content: center;
         align-items: center;
-        border-radius: 10px;
-        border: #68348A solid 1px;
+        /* border-radius: 10px;
+        border: #68348A solid 1px; */
     }
-
+        .krivoy-border{
+            z-index: -1;
+            position: relative;
+        }
+        .in-first-footer{
+            position: absolute;
+            margin-top: 25px;
+        }
         .in-first-footer ul{
             display: flex;
             justify-content: space-between;
@@ -303,20 +317,20 @@ body{
         }
             .main-content .left-btn{
                 margin-left: 125px;
-                margin-right: -70px;
+                margin-right: -45px;
                 z-index: 1;
                 margin-top: 100px;
             }
             .main-content .right-btn{
-                margin-left: -70px;
+                margin-left: -45px;
                 margin-right: 125px;
                 z-index: 1;
                 margin-top: 110px;
             }
             .main-content .offers{
                 display: flex;
-                width: 100%;
-                justify-content: space-evenly;
+                width: 1520px;
+                justify-content: space-between;
                 align-items: baseline;
             }
                 .ellipse2{
@@ -349,6 +363,7 @@ body{
                 .main-content .offers .offer:hover .collect-btn{
                         background: #9a1ae9;
                         border-radius: 35px;
+                        margin-top: 25px;
                         padding: 12px 20px;
                         width: 150px;
                         height: 30px;
@@ -413,7 +428,7 @@ body{
         /* height: 738px; */
         margin-top: 124px;
         margin-bottom: 130px;
-        /* width: ; */
+        width: 1520px;
     }
         
         .page3 h{
@@ -601,7 +616,7 @@ body{
 
     .page5{
         position: relative;
-        margin-left: 200px;
+        /* margin-left: 200px; */
         margin-bottom: 140px;
         width: 1520px;
         display: flex;
@@ -692,7 +707,7 @@ body{
         width: 1408px;
         height: 305px;
         padding: 56px;
-        margin-left: 200px;
+        /* margin-left: 200px; */
         background-color: #2d054a; 
         border-radius: 20px;
         margin-bottom: 139px;
@@ -743,7 +758,7 @@ body{
     footer{
         display: flex;
         flex-direction: column;
-        width: 1920px;
+        width: 100%;
         height: 625px;
     }
     footer .first-part{
@@ -820,7 +835,7 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 15px 300;
+        padding: 15px 300px;
         background-color: #161617;
     }
     footer .second-part p{
