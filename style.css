@@ -883,6 +883,7 @@ body{
     }
     footer .first-part .footer-more .links{
         margin-right: 145px;
+        margin-bottom: 15px;
     }
     footer .first-part .footer-more .links h{
         font-family: var(--font-family);
