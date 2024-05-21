@@ -171,7 +171,7 @@ body{
             .menu li a{
                 text-decoration: none;
                 color: #BCBDBC;
-                transition: all;
+                transition: all 0.2s;
             }
             .menu li a:hover{
                 color: #9519e2;
@@ -298,7 +298,7 @@ body{
             height: 48px;
         }
   .page2 {
-    display: flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
         height: 770px;
@@ -330,7 +330,7 @@ body{
   .page2 .main-content {
     width: 1520px;
     max-width: 1520px;
-    width: 95%;
+    width: 1520px;
     height: 800px;
     
     position: relative;
