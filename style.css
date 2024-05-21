@@ -1185,13 +1185,69 @@ margin-right: 20px;
 
 
         .page3{
-            
+            margin-top: 0px;
             width: 375px;
+            height: 750px;
+            margin-bottom: 0px;
+        }
+        .page3 h{
+            font-size: 25px;
+        }
+        .page3 p1{
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .page3 .main-content{
+            height: 100%;
+            width: 100%;
+        }
+        .page3 .guid{
+            flex-direction: column;
+            height: 100%;
+            align-items: center;
+            width: 100%;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .page3 .main-content .guid .offer{
+            width: 275px;
+            border: none;
+            padding: 0;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        hr {
+            width: 10px;
+            height: 25px;
+            background-color: #250539;
+            border: none;
+            border-radius: 5px;
+        }
+        .page3 .main-content .guid .offer:first-child{
+            padding-left: 0;
+        }
+        .page3 .main-content .guid .offer p{
+            font-size: 16px;
+            /* text-align: start; */
+        }
+        .page3 .main-content .guid .offer h2{
+            margin: 0px;
+            /* text-align: start; */
+            margin-left: 15px;
+        }
+        .page3 .main-content .guid .offer .emblem{
+            display: none;
         }
 
         .page4{
             
             width: 375px;
+        }
+        .page4 h{
+            font-size: 25px;
+        }
+        .page4 p1{
+            font-size: 18px;
         }
 
 
