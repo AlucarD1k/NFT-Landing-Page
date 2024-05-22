@@ -619,6 +619,9 @@ margin-right: 20px;
             justify-content: baseline;
             align-items: center;
         }
+        .page3 .main-content .guid hr{
+            display: none;
+        }
         .emblem{
             display: flex;
             align-items: center;
@@ -739,6 +742,10 @@ margin-right: 20px;
     }
     .page4 .collumns:first-child{
         margin-right: 40px;
+    }
+    .page4 .main-content-4 .collumns a{
+        text-decoration: none;
+        cursor: default;
     }
     .page4 .user{
         display: flex;
@@ -1013,6 +1020,20 @@ margin-right: 20px;
         margin-right: 145px;
         margin-bottom: 15px;
     }
+    footer .first-part .footer-more .links nav [type="checkbox"]{
+        display: none;
+        
+    }
+    footer .first-part .footer-more .links nav label.toggleMenu{
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 136%;
+        color: #fff; 
+        display: none;
+        margin-bottom: 15px;
+        
+    }
     footer .first-part .footer-more .links h{
         font-family: var(--font-family);
         font-weight: 500;
@@ -1216,12 +1237,14 @@ margin-right: 20px;
             margin-bottom: 10px;
             width: 100%;
         }
-        hr {
+        .page3 .main-content .guid hr {
+            display: block;
             width: 10px;
             height: 25px;
             background-color: #250539;
             border: none;
             border-radius: 5px;
+            margin-bottom: 10px;
         }
         .page3 .main-content .guid .offer:first-child{
             padding-left: 0;
@@ -1233,14 +1256,14 @@ margin-right: 20px;
         .page3 .main-content .guid .offer h2{
             margin: 0px;
             /* text-align: start; */
-            margin-left: 15px;
+            /* margin-left: 15px; */
         }
         .page3 .main-content .guid .offer .emblem{
             display: none;
         }
 
         .page4{
-            
+            height: auto;
             width: 375px;
         }
         .page4 h{
@@ -1248,18 +1271,109 @@ margin-right: 20px;
         }
         .page4 p1{
             font-size: 18px;
+            margin-bottom: 10px;
         }
-
+        .page4 .main-content-4{
+            width: 350px;
+            height: auto;
+            flex-wrap: wrap;
+            height: auto;
+            align-items: center;
+            justify-content: center;
+        }
+        .page4 .main-content-4 .categories{
+            width: 350px;
+            flex-wrap: wrap;
+            height: auto;
+            align-items: center;
+            justify-content: center;
+        }
+        .page4 .main-content-4 .categories .collumns{
+            width: 300px;
+            flex-wrap: wrap;
+            height: 115px;
+            overflow: hidden;
+            transition: height 1s;
+            margin-right: 0px;
+            margin-bottom: 15px;
+        }
+        .page4 .main-content-4 .categories .collumns:hover{
+            height: 850px;
+        }
+        .page4 .main-content-4 .categories .collumns .user:nth-child(1){
+            box-shadow: 0 10px 10px #591d69;
+            transition: all 0.5s;
+        }
+        .page4 .main-content-4 .categories .collumns:hover .user:nth-child(1){
+            box-shadow: none;
+        }
+        .user button{
+            margin-left: 25px;
+        }
+        /* .page4 .user{
+            width: 200px ;
+        }
+        .user button{
+            margin-left: 0px;
+        }
+        .page4 .user .name-count name{
+            font-size: 14px;
+            
+        }
+        .page4 .user .name-count .count count{
+            font-size: 14px;
+        } */
+        
+        
+        
 
         .page5{
-            
-            width: 375px;
+            padding-top: 0px;
+            width: 360px;
+            height: auto;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .page5 .discription{
+            width: 360px;
+            align-items: center;
+        }
+        .page5 .discription header {
+            font-size: 30px;
+        }
+        .page5 .discription p{
+            margin-bottom: 10px;
+        }
+        .page5 .discription a{
+            font-size: 18px;
+        }
+        .page5 .images{
+            display: none;
         }
 
-
         .page6{
-            
-            width: 375px;
+            height: auto;
+            padding: 0px;
+            width: 360px;
+            margin-left: 7px;
+            margin-bottom: 15px;
+        }
+        .page6 .chat{
+            display: none;
+        }
+        .page6 .in-box{
+            margin-left: 0px;
+        }
+        .page6 .in-box h1{
+            font-size: 25px;
+            margin-bottom: 5px;
+        }
+        .page6 .in-box p{
+            font-size: 18px;
+            margin-bottom: 7px;
+        }
+        .page6 .in-box button{
+            margin-bottom: 5px;
         }
 
 
@@ -1267,6 +1381,28 @@ margin-right: 20px;
             
             width: 375px;
         }
+        footer .first-part .about{
+            margin-left: 0px;
+        }
+        /* input.toggleMenu:checked + label.toggleMenu{
+            background: #000;
+            color: #fff;
+        }
+        input.toggleMenu:checked ~ footer .first-part .footer-more .links nav ul{
+           height: 100px;
+        } 
+        footer .first-part .footer-more .links nav ul{
+            height: 0px;
+            overflow: hidden;
+        }
+        footer .first-part .footer-more .links h{
+            display: none;
+        }
+        footer .first-part .footer-more .links nav label.toggleMenu{
+            display: block;
+            cursor: pointer;
+        } */
+           
     }
 
 
