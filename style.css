@@ -481,6 +481,7 @@ margin-right: 20px;
     align-items: center;
 }
 .main-content .offers .offer .collect-btn a{
+    max-width: 60%;
     text-decoration: none;
     font-family: var(--second-family);
     color: #fff;
@@ -488,6 +489,7 @@ margin-right: 20px;
 .main-content .offers .offer:hover, .main-content .offers .offer:active{
     height: 558px;
     outline: #9a1ae9 1px solid;
+    
     background-color: #531373;
 }
   
@@ -1093,7 +1095,7 @@ margin-right: 20px;
             overflow: hidden;
             padding-left: 5px;
             width: 370px;
-            height: 800px;
+            height: auto;
             background-image: none, none, none;
         }
         .upper-header{
@@ -1169,7 +1171,7 @@ margin-right: 20px;
         .first-footer{
             
             width: 100%;
-            height: 500px;
+            height: auto;
             background-image: none;
             margin-top: 10px;
             margin-left: 0px;
