@@ -348,7 +348,7 @@ body{
   .offers {
     position: relative;
     display: flex;
-    width: 1510px;
+    width: 1470px;
     margin-right: 35px;
     /* align-items: flex-start; */
     /* padding: 1px; */
@@ -1212,7 +1212,7 @@ margin-right: 20px;
         }
 
         .page2 .main-content .slider-scrollbar{
-            width: 320px;
+            width: 100%;
         }
 
 
