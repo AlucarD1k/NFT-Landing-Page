@@ -341,7 +341,7 @@ body{
     margin-top: -1000px;
   } */
   .slider-scrollbar{
-    margin-left: 25px;
+    margin-left: 0px;
     position: absolute;
     bottom: 0%;
   }
